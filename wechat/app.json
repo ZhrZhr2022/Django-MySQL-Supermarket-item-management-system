@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/warn/index",
+    "pages/scanresult/index",
+    "pages/billing/index",
+    "pages/my2/index",
+    "pages/my/index",
+    "pages/wallet/index",
+    "pages/charge/index",
+    "pages/logs/logs",
+    "pages/zhuce/index",
+    "pages/face/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#b9dd08",
+    "navigationBarTitleText": "智U购车辆租用系统",
+    "navigationBarTextStyle":"black"
+    
+  }
+  
+}

@@ -1,0 +1,32 @@
+<view class="main">
+
+
+<view class="login">
+	
+	<view class="kuang shadow"style="width: 640rpx; height: 972rpx; display: flex; box-sizing: border-box">
+			<view class="hint">欢迎使用智U购</view>
+		<open-data class="avatar-open" type="userAvatarUrl"></open-data> 
+
+    <view class="form-group">
+				<view class="">账号：</view>
+				<input placeholder="输入账号" maxlength="30" bindinput="content" placeholder-class="phc" model:value="{{username}}"></input>
+			</view>
+
+			<view class="form-group">
+				<view class="">密码：</view>
+				<input placeholder="输入密码" maxlength="30" bindinput="password" type="password" placeholder-class="phc" model:value="{{password}}"></input>
+			</view>
+
+			<!--<button class="btn" bindtap="bindGetPhoneNumber">点击登录</button>-->
+			<button class="btn" bindtap="login" style="position: relative; left: 0rpx; top: 40rpx">点击登录</button>
+		<view bind:tap="home"  class="return" style="position: relative; left: 0rpx; top: 15rpx">返回</view>
+    <view bind:tap="zhuce"  class="return" style="position: relative; left: 0rpx; top: -20rpx">没有账号？现在去注册</view>
+	</view>
+
+</view>
+
+<view class="bottom">
+	 
+</view>
+
+</view>

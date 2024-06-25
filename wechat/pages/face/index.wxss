@@ -1,0 +1,53 @@
+.cameraBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.camera {
+    width: 600rpx;
+    height: 600rpx;
+}
+
+.camera1 {
+    width: 544rpx;
+    height: 590rpx;
+    border-radius: 50%; /* 将边框半径设置为元素宽度的一半，使其呈圆形 */
+    overflow: hidden; /* 隐藏超出圆形边界的部分 */
+}
+
+
+.text {
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #333;
+}
+.text1 {
+    font-size: 40rpx;
+    margin-top: 70rpx;
+}
+.text2 {
+    font-size: 32rpx;
+    margin: 24rpx 0 72rpx 0;
+}
+.text3 {
+    color: #5C74FF;
+    margin: 56rpx 0 24rpx 0;
+}
+.text4 {
+    color: #1a3303;
+    margin: 24rpx 0 72rpx 0;
+}
+.cameraBox_btn {
+    width: 590rpx;
+    text-align: center;
+    line-height: 88rpx;
+    background: linear-gradient(90deg, #748847 0%, #4b6807 100%);
+    border-radius: 44rpx 44rpx 44rpx 44rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.shibie {
+    width: 400rpx;
+    height: 400rpx;
+}

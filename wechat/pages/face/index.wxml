@@ -1,0 +1,11 @@
+<view class="cameraBox">
+    <text class="text1">为保证是本人操作</text>
+    <text class="text2">需采集你的人脸信息以核实身份</text>
+    <camera class="camera1" device-position="front" style="width: 544rpx; height: 590rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+        
+    </camera>
+    <!--<cover-image src="/images/face.png" class="shibie" bindtap="changePos" style="width: 544rpx; height: 598rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx"></cover-image>-->
+    <text class="text3">请确保正脸出现在取景框中，以便识别</text>
+    <text class="text4">一旦提交后则不能更改，错误信息会影响正常参加会议</text>
+    <view class="cameraBox_btn" bindtap="getPhoto">点击开始拍摄</view>
+</view>

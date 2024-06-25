@@ -1,0 +1,37 @@
+<view class="main">
+
+
+<view class="login">
+	
+	<view class="kuang shadow" style="width: 640rpx; height: 972rpx; display: flex; box-sizing: border-box">
+			<view class="hint">欢迎注册智U购</view>
+		<open-data class="avatar-open" type="userAvatarUrl"></open-data> 
+
+            <!--<view class="form-group">
+				<view class="">昵称：</view>
+				<input placeholder="心仪的昵称" maxlength="30" bindinput="nickname" placeholder-class="phc" model:value="{{nickName}}"></input>
+			</view>-->
+
+			<view class="form-group">
+				<view class="">账号：</view>
+				<input placeholder="手机号码" maxlength="30" bindinput="content" placeholder-class="phc" model:value="{{username}}"></input>
+			</view>
+
+			<view class="form-group">
+				<view class="">密码：</view>
+				<input placeholder="包含数字和字母的组合" maxlength="30" bindinput="password" type="password" placeholder-class="phc" model:value="{{password}}"></input>
+			</view>
+
+			<button class="btn" bindtap="bindGetPhoneNumber">点击注册</button>
+			<!--<button class="btn" bindtap="login">点击注册</button>--->
+			
+		<view bindtap="url" class="return">返回主页</view>
+	</view>
+
+</view>
+
+<view class="bottom">
+	 
+</view>
+
+</view>
