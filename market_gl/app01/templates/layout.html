@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1/css/bootstrap.min.css' %}">
+    <style>
+        /* Custom styles for beautification */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-default .navbar-nav>li>a {
+            color: #716B67;
+            font-size: 15px;
+            font-weight: bold; /* 设置文字加粗 */
+        }
+        .navbar {
+            height: 80px;
+            background-color: #ffffff; /* Dark background color */
+            border-radius: 0;
+            margin-bottom: 30px;
+            border: none;
+            display: flex;
+            align-items: center; /* 垂直居中 */
+        }
+        .navbar-nav li a:hover {
+            text-decoration: underline; /* 鼠标悬停时添加下划线 */
+            color: #080808;
+        }
+        .navbar-brand {
+            color: #000; /* White text color */
+            font-size: 25px;
+        }
+
+        .navbar-nav li a {
+            color: #fff; /* White text color for nav links */
+        }
+
+        .navbar-nav li a:hover {
+            color: #fff; /* Light grey text color on hover */
+        }
+
+        .dropdown-menu {
+            background-color: #343a40; /* Dark background color for dropdown menu */
+        }
+
+        .dropdown-menu a {
+            color: #fff; /* White text color for dropdown items */
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #555; /* Darker background color on hover */
+        }
+
+        /* Add more custom styles as needed */
+
+    </style>
+    {% block css %}{% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/account/list/"> 智U购后台管理系统 </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/account/list/">管理员账号管理</a></li>
+                <li><a href="/user/list/">用户账号管理</a></li>
+                <li><a href="/goods/list/">商品信息管理</a></li>
+                <li><a href="/code/list/">二维码管理</a></li>
+                <li><a href="/car/list/">购物车信息管理</a></li>
+                <li><a href="/tag/list/">标签信息管理</a></li>
+                <li><a href="#">权限设置</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">{{ request.session.info.name }} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">个人信息</a></li>
+                        <li><a href="/change/">修改密码</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/logout/">注销</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div>
+    {% block content %}{% endblock %}
+</div>
+
+<script src="{% static 'js/jquery-3.6.1.min.js' %}"></script>
+<script src="{% static 'plugins/bootstrap-3.4.1/js/bootstrap.min.js' %}"></script>
+{% block js %}{% endblock %}
+</body>
+</html>
